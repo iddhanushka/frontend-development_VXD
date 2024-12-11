@@ -1,0 +1,52 @@
+.site-header {
+  padding: 5px 0;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main-menu {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+  }
+
+  &__menu-item {
+    padding-left: 20px;
+    font-size: 14px;
+
+    &::marker {
+      color: #1f2937;
+    }
+
+    &:first-child {
+      list-style-type: none;
+      padding-left: 0;
+      border: 1px solid rgba(#000000, 0.1);
+      border-radius: 20px;
+      padding: 10px 30px;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: #18191c;
+  }
+
+  &__contact-button {
+    text-decoration: none;
+    background: #18191c;
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 14px;
+    display: flex;
+  }
+
+  &__contact-btn-icon {
+    max-width: 14px;
+    margin-right: 10px;
+  }
+}
