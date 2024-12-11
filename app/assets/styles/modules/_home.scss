@@ -1,0 +1,68 @@
+.data-driven {
+  &__title {
+    color: #18191c;
+    font-size: 130px;
+    font-weight: 500;
+    line-height: 130px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__action-btn {
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    padding-left: 0;
+  }
+
+  &__left-para {
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 75%;
+    margin-top: 110px;
+    margin-bottom: 0;
+  }
+
+  &__right-para {
+    font-size: 18px;
+    max-width: 60%;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  &__context {
+    position: relative;
+  }
+
+  &__elipse {
+    position: absolute;
+    bottom: -90px;
+    right: -80px;
+  }
+
+  &__explore-btn-icon {
+    max-width: 24px;
+    margin-left: 10px;
+  }
+
+  &__explore-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__book-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__book-btn-icon {
+    max-width: 24px;
+    margin-left: 10px;
+  }
+}
