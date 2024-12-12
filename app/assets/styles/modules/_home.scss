@@ -65,6 +65,19 @@
     max-width: 24px;
     margin-left: 10px;
   }
+
+  &__book-btn-icon {
+    animation: rotateLeft 4s linear infinite;
+  }
+
+  @keyframes rotateLeft {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 }
 
 .rapidly-changing {
