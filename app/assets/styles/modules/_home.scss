@@ -68,7 +68,7 @@
 }
 
 .rapidly-changing {
-  padding: 200px 0 50px 0;
+  padding: 200px 0 70px 0;
 
   &__title {
     font-size: 80px;
@@ -337,4 +337,133 @@
   max-width: 60%;
   line-height: 22px;
   margin: 0;
+}
+
+.plan-pricing {
+  padding: 80px 0;
+
+  &__feature-icon {
+    max-width: 24px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: #18191c;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: #999da6;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 60px;
+  }
+
+  &__context {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+  }
+
+  &__cards {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  &__card-item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.06);
+
+    width: 100%;
+  }
+
+  &__feature-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    row-gap: 5px;
+  }
+
+  &__feature-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--premium {
+      color: #fff;
+    }
+  }
+
+  &__amount {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+    &--premium {
+      color: #fff;
+    }
+  }
+
+  &__month {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+
+  &__card-header {
+    padding: 40px 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &--premium {
+      background: linear-gradient(135deg, rgba(222, 53, 255, 1) 0%, rgba(58, 101, 255, 1) 64%, rgba(22, 241, 255, 1) 100%);
+    }
+  }
+
+  &__card-footer {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__card-body {
+    padding: 40px 40px;
+  }
+
+  &__card-footer {
+    padding: 30px 40px;
+    border-top: 1px solid #18191c3d;
+  }
+
+  &__card-btn {
+    width: fit-content;
+    margin: auto;
+  }
 }
