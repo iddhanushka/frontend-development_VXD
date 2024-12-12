@@ -1,4 +1,39 @@
 .data-driven {
+  &__bg-animation {
+    --a: 135deg;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #6a0dad, #ff007f, #ff4500);
+    mask: linear-gradient(#0000 0 0) content-box intersect, conic-gradient(#000 var(--a), #0000 0);
+    -webkit-mask: linear-gradient(#0000 0 0) content-box intersect, conic-gradient(#000 var(--a), #0000 0);
+    filter: blur(300px);
+    opacity: 0.1;
+    background-color: rgb(255, 255, 255);
+    animation: colorChange 5s infinite alternate, rotate 10s linear infinite;
+    transform: rotate(128deg);
+    position: absolute;
+    top: -120%;
+    z-index: -1;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background: linear-gradient(45deg, #6a0dad, #ff007f, #ff4500);
+    }
+    33% {
+      background: linear-gradient(45deg, #ff007f, #00ffab, #ffd700);
+    }
+    66% {
+      background: linear-gradient(45deg, #00ffab, #4b0082, #00ffff);
+    }
+    100% {
+      background: linear-gradient(45deg, #4b0082, #6a0dad, #ff007f);
+    }
+  }
+
   &__title {
     color: #18191c;
     font-size: 130px;
@@ -553,5 +588,9 @@
   &__book-btn {
     display: flex;
     align-items: center;
+  }
+
+  &__book-btn-icon {
+    animation: rotateLeft 4s linear infinite;
   }
 }
