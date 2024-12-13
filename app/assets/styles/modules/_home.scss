@@ -6,7 +6,7 @@
   }
 
   &__bg-animation {
-    --a: 135deg;
+    --a: 120deg;
     width: 100%;
     aspect-ratio: 1;
     padding: 200px;
@@ -21,7 +21,7 @@
     animation: colorChange 5s infinite alternate, rotate 10s linear infinite;
     transform: rotate(128deg);
     position: absolute;
-    top: -120%;
+    top: -155%;
     z-index: -1;
   }
 
@@ -96,6 +96,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 40px;
 
     @media (min-width: 576px) {
       font-size: 18px;
@@ -171,31 +172,40 @@
   }
 
   &__title {
-    font-size: 80px;
+    font-size: 24px;
+    font-weight: 500;
     color: #18191c;
     text-align: center;
     margin: 0;
-    margin-bottom: 100px;
 
     @media (min-width: 576px) {
-      font-size: 24px;
+      font-size: 80px;
       max-width: 70%;
       text-align: left;
+      margin-bottom: 100px;
     }
   }
 
   &__count-icon-img {
-    max-width: 20px;
+    max-width: 15px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: 576px) {
+      max-width: 20px;
+    }
   }
 
   &__timeline-context {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     position: relative;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__case-study-context {
@@ -204,39 +214,61 @@
     background-size: cover;
     border-radius: 50px;
     height: 100%;
-    padding: 70px;
+    padding: 20px;
     border-radius: 20px;
+
+    @media (min-width: 576px) {
+      padding: 70px;
+    }
   }
 
   &__right-column {
-    position: absolute;
-    height: 80%;
-    width: 60vw;
-    left: 50%;
+    position: relative;
+    width: 79%;
+    margin-top: 30px;
+
+    @media (min-width: 576px) {
+      position: absolute;
+      height: 80%;
+      width: 60vw;
+      left: 50%;
+      margin-top: 0;
+    }
   }
 
   &__case-card-two {
     background: #fff;
-    position: absolute;
     box-shadow: 15px -20px 0px 0px rgb(0 0 0 / 6%);
     border-radius: 20px;
-    width: 50vw;
     padding: 30px 30px;
+
+    @media (min-width: 576px) {
+      position: absolute;
+      width: 50vw;
+    }
   }
 
   &__case-title {
     margin: 0;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 500;
-    max-width: 80%;
-    line-height: 35px;
+
+    @media (min-width: 576px) {
+      font-size: 24px;
+      max-width: 80%;
+      line-height: 35px;
+    }
   }
 
   &__profile-details {
     display: flex;
     padding-left: 0;
-    column-gap: 40px;
+    column-gap: 20px;
     align-items: center;
+
+    @media (min-width: 576px) {
+      column-gap: 40px;
+    }
   }
 
   &__profiles {
@@ -245,25 +277,38 @@
 
   &__collaborators-count {
     list-style-type: none;
-    font-size: 14px;
+    font-size: 10px;
     color: #818190;
     font-weight: 400;
     margin-left: -30px;
+
+    @media (min-width: 576px) {
+      font-size: 14px;
+    }
   }
 
   &__colloborated-date {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
     color: #818190;
     text-indent: 10px;
+
+    @media (min-width: 576px) {
+      font-size: 14px;
+    }
   }
 
   &__profile-item {
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
     background: #ececf1;
     border-radius: 50%;
     border: 2px solid #fff;
+
+    @media (min-width: 576px) {
+      width: 32px;
+      height: 32px;
+    }
 
     &:nth-child(2) {
       position: relative;
@@ -284,9 +329,15 @@
 
   &__box {
     height: 121px;
-    width: 100%;
+    width: 60%;
     background: #ececf1;
     border-radius: 5px;
+    margin-bottom: 10px;
+
+    @media (min-width: 576px) {
+      margin-bottom: unset;
+      width: 100%;
+    }
   }
 
   &__first-line {
@@ -297,22 +348,34 @@
   }
 
   &__second-line {
-    width: 380px;
+    width: 70%;
     height: 16px;
     background: #ececf1;
     margin-bottom: 10px;
+
+    @media (min-width: 576px) {
+      width: 380px;
+    }
   }
 
   &__third-line {
-    width: 380px;
+    width: 70%;
     height: 16px;
     background: #ececf1;
+
+    @media (min-width: 576px) {
+      width: 380px;
+    }
   }
 
   &__case-study-details {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr;
     column-gap: 20px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 5fr;
+    }
   }
 
   &__counting-info {
@@ -320,7 +383,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     position: relative;
-    top: 90px;
+    top: 18px;
+
+    @media (min-width: 576px) {
+      top: 90px;
+    }
   }
 
   &__running,
@@ -329,7 +396,11 @@
     background: #fff;
     box-shadow: 2px -2px 0px 0px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
-    padding: 25px 40px;
+    padding: 20px 25px;
+
+    @media (min-width: 576px) {
+      padding: 25px 40px;
+    }
   }
 
   &__count-list {
@@ -340,15 +411,24 @@
   }
 
   &__count-number {
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 500;
+
+    @media (min-width: 576px) {
+      font-size: 36px;
+    }
   }
 
   &__count-icon {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     background: #aaceff;
     border-radius: 50%;
+
+    @media (min-width: 576px) {
+      width: 40px;
+      height: 40px;
+    }
 
     &--second {
       background: #ccefc0;
@@ -359,7 +439,11 @@
     margin: 0;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+
+    @media (min-width: 576px) {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -367,29 +451,40 @@
   list-style: none;
   border-left: 2px solid #eceef3;
   position: relative;
-  left: 60px;
-  padding: 10px 0;
+  left: 40px;
+  padding-right: 60px;
+
+  @media (min-width: 576px) {
+    padding: 10px 0;
+  }
 }
 
 .timeline li {
   position: relative;
   margin: 40px 0;
-  padding-left: 30px;
+  padding-left: 15px;
+
+  @media (min-width: 576px) {
+    padding-left: 30px;
+  }
 }
 
 .timeline-number {
   position: absolute;
   left: -60px;
   top: 40px;
-
   text-align: center;
-
   color: #e6e6e6;
   border-radius: 50%;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  @media (min-width: 576px) {
+    left: -60px;
+    font-size: 36px;
+  }
 }
 
 .timeline-content {
@@ -410,7 +505,9 @@
 }
 
 .timeline-item:hover .timeline-content .timeline-scroll-line {
-  height: 200px;
+  @media (min-width: 576px) {
+    height: 200px;
+  }
 }
 
 .timeline-item:hover .timeline-number {
@@ -425,28 +522,46 @@
 }
 
 .timeline-icon {
-  max-width: 40px;
-  margin-bottom: 5px;
+  max-width: 30px;
+  margin-bottom: 10px;
+
+  @media (min-width: 576px) {
+    max-width: 40px;
+    margin-bottom: 5px;
+  }
 }
 
 .timeline-header {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
   margin-bottom: 5px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
 }
 
 .timeline-details {
   color: #767a85;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  max-width: 60%;
+
   line-height: 22px;
   margin: 0;
+
+  @media (min-width: 576px) {
+    max-width: 60%;
+    font-size: 14px;
+  }
 }
 
 .plan-pricing {
-  padding: 80px 0;
+  padding: 40px 0;
+
+  @media (min-width: 576px) {
+    padding: 80px 0;
+  }
 
   &__feature-icon {
     max-width: 24px;
@@ -454,39 +569,56 @@
   }
 
   &__title {
-    font-size: 80px;
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
     margin: 0;
     color: #18191c;
     margin-bottom: 10px;
+
+    @media (min-width: 576px) {
+      font-size: 80px;
+    }
   }
 
   &__description {
     color: #999da6;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     margin: 0;
-    max-width: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 60px;
+
+    @media (min-width: 576px) {
+      font-size: 16px;
+      max-width: 50%;
+    }
   }
 
   &__context {
     width: 100%;
-    max-width: 70%;
+
     margin: auto;
+
+    @media (min-width: 576px) {
+      max-width: 70%;
+    }
   }
 
   &__cards {
     list-style-type: none;
     padding-left: 0;
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
+    display: grid;
+    row-gap: 20px;
+
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+    }
   }
 
   &__card-item {
@@ -510,7 +642,12 @@
     margin-bottom: 10px;
 
     &--hidden {
-      visibility: hidden;
+      display: none;
+
+      @media (min-width: 576px) {
+        display: block;
+        visibility: hidden;
+      }
     }
   }
 
@@ -527,11 +664,15 @@
 
   &__amount {
     margin: 0;
-    font-size: 52px;
+    font-size: 30px;
     font-weight: 500;
     display: flex;
     align-items: center;
     margin-bottom: 0px;
+
+    @media (min-width: 576px) {
+      font-size: 52px;
+    }
 
     &--premium {
       color: #fff;
@@ -575,17 +716,25 @@
 }
 
 .start-journey {
-  padding: 70px 0;
+  padding: 20px 0 40px 0;
+
+  @media (min-width: 576px) {
+    padding: 70px 0;
+  }
 
   &__context {
     background: #f6f6f9;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
-    padding: 100px 40px;
+    padding: 30px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    @media (min-width: 576px) {
+      padding: 100px 40px;
+    }
   }
 
   &__context-bg-gradient {
@@ -596,33 +745,52 @@
   }
 
   &__explore-btn-icon {
-    max-width: 24px;
-    margin-left: 10px;
+    max-width: 14px;
+    margin-left: 8px;
+
+    @media (min-width: 576px) {
+      max-width: 24px;
+      margin-left: 10px;
+    }
   }
 
   &__book-btn-icon {
-    max-width: 24px;
-    margin-left: 10px;
+    max-width: 14px;
+    margin-left: 8px;
+
+    @media (min-width: 576px) {
+      max-width: 24px;
+      margin-left: 10px;
+    }
   }
 
   &__title {
-    font-size: 80px;
+    font-size: 24px;
     margin: 0;
     color: #18191c;
     font-weight: 500;
-    max-width: 70%;
+
     margin: auto;
     margin-bottom: 30px;
+
+    @media (min-width: 576px) {
+      font-size: 80px;
+      max-width: 70%;
+    }
   }
 
   &__description {
     color: #999da6;
     font-size: 16px;
-    max-width: 37%;
+
     margin: auto;
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 30px;
+
+    @media (min-width: 576px) {
+      max-width: 37%;
+    }
   }
 
   &__gradient-img {
@@ -630,12 +798,18 @@
   }
 
   &__action-btn {
-    display: flex;
+    display: grid;
     list-style-type: none;
     padding-left: 0;
     position: relative;
-    column-gap: 10px;
-    justify-content: center;
+    row-gap: 10px;
+
+    justify-items: center;
+
+    @media (min-width: 576px) {
+      display: flex;
+      column-gap: 10px;
+    }
   }
 
   &__explore-btn {

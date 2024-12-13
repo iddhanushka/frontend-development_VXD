@@ -35,6 +35,7 @@
     background: #000000d6;
     padding: 13px 0;
     left: 0;
+    z-index: 10;
   }
 
   &__mobile-menu-link {
@@ -49,6 +50,7 @@
     position: absolute;
     right: 20px;
     font-size: 20px;
+    z-index: 10;
   }
 
   &__navbar {
