@@ -1,3 +1,4 @@
 import "../styles/styles.scss"
+import MobileMenu from "./modules/MobileMenu"
 
-//test
+let mobileMenu = new MobileMenu()

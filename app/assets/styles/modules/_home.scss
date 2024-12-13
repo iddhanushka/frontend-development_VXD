@@ -1,4 +1,10 @@
 .data-driven {
+  padding: 30px 0;
+
+  @media (min-width: 576px) {
+    padding: 100px 0;
+  }
+
   &__bg-animation {
     --a: 135deg;
     width: 100%;
@@ -36,39 +42,67 @@
 
   &__title {
     color: #18191c;
-    font-size: 130px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 130px;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      font-size: 130px;
+      line-height: 130px;
+      text-align: left;
+    }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr;
     position: relative;
     z-index: 1;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 2fr 3fr;
+    }
   }
 
   &__action-btn {
     list-style: none;
-    display: flex;
-    column-gap: 10px;
+    justify-items: center;
     padding-left: 0;
+    display: grid;
+    row-gap: 10px;
+
+    @media (min-width: 576px) {
+      display: flex;
+      column-gap: 10px;
+    }
   }
 
   &__left-para {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
-    max-width: 75%;
-    margin-top: 110px;
+    text-align: center;
     margin-bottom: 0;
+
+    @media (min-width: 576px) {
+      max-width: 75%;
+      margin-top: 110px;
+      font-size: 24px;
+      text-align: left;
+    }
   }
 
   &__right-para {
-    font-size: 18px;
-    max-width: 60%;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 25px;
-    margin-bottom: 30px;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      font-size: 18px;
+      max-width: 60%;
+      margin-bottom: 30px;
+      line-height: 25px;
+    }
   }
 
   &__context {
@@ -77,13 +111,22 @@
 
   &__elipse {
     position: absolute;
-    bottom: -90px;
+    bottom: -30px;
     right: -80px;
+
+    @media (min-width: 576px) {
+      bottom: -90px;
+    }
   }
 
   &__explore-btn-icon {
-    max-width: 24px;
-    margin-left: 10px;
+    max-width: 14px;
+    margin-left: 8px;
+
+    @media (min-width: 576px) {
+      max-width: 24px;
+      margin-left: 10px;
+    }
   }
 
   &__explore-btn {
@@ -97,8 +140,13 @@
   }
 
   &__book-btn-icon {
-    max-width: 24px;
-    margin-left: 10px;
+    max-width: 14px;
+    margin-left: 8px;
+
+    @media (min-width: 576px) {
+      max-width: 24px;
+      margin-left: 10px;
+    }
   }
 
   &__book-btn-icon {
@@ -116,14 +164,24 @@
 }
 
 .rapidly-changing {
-  padding: 200px 0 70px 0;
+  padding: 30px 0 70px 0;
+
+  @media (min-width: 576px) {
+    padding: 200px 0 70px 0;
+  }
 
   &__title {
     font-size: 80px;
     color: #18191c;
-    max-width: 70%;
+    text-align: center;
     margin: 0;
     margin-bottom: 100px;
+
+    @media (min-width: 576px) {
+      font-size: 24px;
+      max-width: 70%;
+      text-align: left;
+    }
   }
 
   &__count-icon-img {

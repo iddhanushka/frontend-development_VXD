@@ -3,13 +3,23 @@
   background: #18191c;
   color: #fff;
   border-radius: 25px;
-  padding: 15px 30px;
-  font-size: 14px;
+  padding: 12px 20px;
+  font-size: 12px;
   display: flex;
   width: fit-content;
+
+  @media (min-width: 576px) {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
 
   &--book-a-demo {
     background: #fff;
     color: #18191c;
+    border: 1px solid #18191c;
+
+    @media (min-width: 576px) {
+      border: none;
+    }
   }
 }
